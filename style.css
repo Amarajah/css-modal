@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.pop{
+    text-decoration: none;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: inline-block;
+    padding: 15px;
+}
+.pop:hover{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    transition: 0.3s;
+}
+#modal{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+#modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+.here{
+    text-decoration: none;
+    color: black;
+}
+.here:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: 0.3s;
+}
+#my-content{
+    position: relative;
+    background: aliceblue;
+    padding: 1rem 2rem;
+}
+.time{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    position: absolute;
+    top:0;
+    color: black;
+    right: 20px;
+    padding-top: 10px;
+}
+.time:hover{
+    font-size: 30px;
+    font-weight: 600px;
+}
+@media screen and (max-width:600px) {
+    #modal{
+       margin: 0px 15px;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:900px) {
+    #modal{
+       margin:0px 40px;
+    }
+}
